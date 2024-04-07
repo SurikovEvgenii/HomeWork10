@@ -6,8 +6,13 @@
   <title>HomeWork10 - Tags</title>
 </head>
 <body>
+
+<a href="/start-servlet">Get Data</a>
+
+
 <ctg:table rows="2" head="Title">
-  Проверка тест
+  ${students}
+
 </ctg:table>
 </body>
 </html>

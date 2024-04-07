@@ -1,5 +1,7 @@
 package org.surikov.homework10.dao;
 
+import org.postgresql.Driver;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -21,11 +23,10 @@ public class DBManager {
     }
     static public Connection createConnection() throws SQLException {
         try {
-            Class.forName("org.postgres.Driver");
+            Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-
         return DriverManager.getConnection(DB_URL,PROPERTIES);
     }
 }
