@@ -17,7 +17,7 @@ public class Dao {
         List<Studens> studensList = new ArrayList<>();
 
         try(Connection connection = DBManager.createConnection()) {
-            String query = "SELECT * FROM students";
+            String query = "SELECT firstname, lastname, distinct(evaluation) AS evaluation FROM students";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.getResultSet();
 
