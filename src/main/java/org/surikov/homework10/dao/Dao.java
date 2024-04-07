@@ -13,7 +13,7 @@ public class Dao {
 
     public static List<Students> select(){
 
-        String query = "SELECT DISTINCT(evaluation), students.firstname, students.lastname FROM students";
+        String query = "SELECT DISTINCT(evaluation), students.firstname, students.lastname FROM students ORDER BY evaluation DESC";
         ResultSet resultSet;
         List<Students> studentsList = new ArrayList<>();
 
