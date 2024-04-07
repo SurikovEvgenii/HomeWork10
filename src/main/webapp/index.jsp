@@ -1,3 +1,5 @@
+<%@ page import="org.surikov.homework10.entity.Students" %>
+<%@ page import="org.surikov.homework10.dao.Dao" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="ctg" uri="customtags" %>
 <!DOCTYPE html>
@@ -7,12 +9,10 @@
 </head>
 <body>
 
-<a href="/start-servlet">Get Data</a>
-
-
-<ctg:table rows="2" head="Title">
-  ${students}
-
+<ctg:table rows="1" head="Students">
+      ${students}
 </ctg:table>
+
+<a href="/start-servlet">Get data</a><br>
 </body>
 </html>

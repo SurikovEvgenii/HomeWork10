@@ -1,7 +1,6 @@
 package org.surikov.homework10.dao;
 
 import org.postgresql.Driver;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
